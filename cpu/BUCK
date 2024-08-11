@@ -1,0 +1,12 @@
+load("@prelude//api:config.bzl", "setting", "setting_value")
+
+setting (
+    name = "cpu",
+    visibility = ["PUBLIC"],
+)
+
+setting_value (
+    name = "aarch64",
+    setting = ":cpu",
+    visibility = ["PUBLIC"],
+)

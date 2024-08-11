@@ -1,0 +1,43 @@
+load("@prelude//api:toolchain.bzl", "toolchain")
+
+toolchain (
+    name = "ldc",
+    command_name = "ldc2",
+    kind = "compiler",
+    visibility = ["PUBLIC"],
+)
+
+toolchain (
+    name = "cc",
+    command_name = "cc",
+    kind = "compiler",
+    visibility = ["PUBLIC"],
+)
+
+toolchain (
+    name = "cxx",
+    command_name = "cxx",
+    kind = "compiler",
+    visibility = ["PUBLIC"],
+)
+
+toolchain (
+    name = "ld",
+    command_name = "ld",
+    kind = "linker",
+    visibility = ["PUBLIC"],
+)
+
+toolchain (
+    name = "lld",
+    command_name = "lld",
+    kind = "linker",
+    visibility = ["PUBLIC"],
+)
+
+toolchain (
+    name = "ar",
+    command_name = "ar",
+    kind = "archiver",
+    visibility = ["PUBLIC"],
+)

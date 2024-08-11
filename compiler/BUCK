@@ -1,0 +1,20 @@
+load("@prelude//api:compiler.bzl", "compiler")
+
+compiler (
+    name = "ldc",
+    toolchain = "@prelude//toolchain:ldc",
+    ld = "@prelude//toolchain:lld",
+    visibility = ["PUBLIC"],
+)
+
+compiler (
+    name = "cc",
+    toolchain = "@prelude//toolchain:cc",
+    visibility = ["PUBLIC"],
+)
+
+compiler (
+    name = "cxx",
+    toolchain = "@prelude//toolchain:cxx",
+    visibility = ["PUBLIC"],
+)
